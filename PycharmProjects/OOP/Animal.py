@@ -12,6 +12,10 @@ class Animal(ABC): # Animal bir abstract
     def todo(self):
         pass
 
+    # @abstractmethod
+    # def nino(self):
+    #     pass
+
 class Huntable(ABC):
     @abstractmethod
     def hunt(self):
@@ -102,7 +106,8 @@ interface_actions = {
 }
 
 
-animals = [Cat("Cat1"),Sheep("Sheep1"),Fish("Fish1"), Cat("Cat2"),Sheep("Sheep2"), Dog("Dog1"), Cat("Cat3"),Dog("Dog2"),Cat("Cat4")]
+animals = [Cat("Cat1"),Sheep("Sheep1"),Fish("Fish1"), Cat("Cat2"),Sheep("Sheep2"),
+           Dog("Dog1"), Cat("Cat3"),Dog("Dog2"),Cat("Cat4")]
 
 for animal in animals:
     print(f"--- {animal.tour} ---")  # hayvan adı başlık gibi
