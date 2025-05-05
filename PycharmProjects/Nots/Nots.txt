@@ -1,0 +1,2 @@
+    -> Ctrl + Alt + L ------>  FORMATLAMA KODU
+    -> ''' yorum satiri olarak kullanabiliriz yada uzayan stringleri bir alt satira kaydirmak icinde kullanliabilir '''
