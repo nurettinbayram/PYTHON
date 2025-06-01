@@ -25,9 +25,11 @@
     -> numbers.insert(3,78)-----------------> dizinin 3. indexten once konumuna 78 i keler
     -> numbers.pop() -----------------------> dizinin son elenani silini
     -> numbers.pop(0) ----------------------> dizinin ilk elenani silini
-    -> numbers.remove(10) ------------------> dizinin 10 elenani silir
-    -> numbers.sort() ----------------------> dizinin siralar
-    -> numbers.reverse() -------------------> dizinin  ters siralar
+    -> numbers.remove(10) ------------------> dizideki  10 elenani siler
+    -> numbers.sort() ----------------------> orijinal diziyi siralar
+    -> num = sorted(numbers) ---------------> orijinal degismeden olusan yeni diziyi siralar
+    -> numbers.reverse() -------------------> orijinal diziyi ters siralar
+    -> num =list(reversed(numbers)) --------> orijinal diziyi degistirmeden yeni diziye tersten siralar # ama bu metoda dikkat edilmesi gerekir ki bir iterator dondurur sonradan listeye cevirmemiz gerekiyor.
     -> letters.sort() ----------------------> dizinin alfabetik olarak siralar
     -> letters.count("a") ------------------> dizide kac adet 'a' var
     -> numbers.count(10) -------------------> dizide kac adet 10 var
@@ -39,7 +41,7 @@
     -----------------------------------> (TUPLE) <-------------------------------
     *** Listelerle tamamen ayni sadece basta tanimlanmis olan elemanlari sonradan degistiremezsin tup[0] = "ali" bunu kabul etmez
     *** sadece index ve count metodlari bulundurur.
-    *** iki tuole listesi arti(+) oparatoru ile toplanabilir
+    *** iki tuple listesi arti(+) oparatoru ile toplanabilir
     *** basta tanimlanan tuple sonradan yeni bir tuple icine aktarilanilir bastaki silinir.
     *** index erisimi []
 
@@ -54,11 +56,12 @@
     -> d.values() -------------------------> tum valueleri dizi seklinde getirir|| ['Ali', 25]
     -> d.item() ---------------------------> tum anahtar deger verilerini doner  || [('name', 'Ali'), ('age', 25)]
     -> d.get("Ali", "Yok")-----------------> Ali anahtarina bakar eger yoksa Yok degeri doner
-    -> d.update({"city":"Sirnak"})---------> city keysi yoksa ekler varsada degerini gunceller
+    -> d.update({"city":"Sirnak"})---------> city keysi yoksa ekler varsada degerini gunceller {} var iki nokta kullanilmis
+    -> d.setdefault('country','kurdistan')-> belirtilen anahtar varsa doner yoksa ekleyip doner {} yok virgul kullanilmis
     -> d.pop("age")------------------------> belirtilen anahtari siler ve silinen degeri doner
     -> d.popitem() ------------------------> son eklenen ogeyi siler ve doner
     -> d.clear ----------------------------> tum sozlugu siler
-    -> d.setdefault('country':'kurdistan')-> belirtilen anahtar varsa doner yoksa ekleyip doner
+
 
 
     -----------------------------------> {SET} <-----------------------
@@ -66,6 +69,7 @@
     *** dongu ile ulasabiliriz
     *** her elemandan bir adet bulunur ayni elemani iki kere ekleyemezsin
     *** siralamayi tutmuyor rastgele bir siralamaya sahip
+    *** s = set()
 
 
     -> fruits.add("cherry") --------------------------> eleman eklenir
@@ -74,7 +78,13 @@
     -> fruits.discard("grape") -----------------------> grapei setten siler
     -> fruits.pop() ----------------------------------> herhangi bir eleman silinir
     -> fruits.clear() --------------------------------> tum elemanlari siler
-
+    -> s = set(myList) -------------------------------> bir listeyi set'e cevirme
+    -> unCommonSet = set(list1) ^ set(list2)----------> ortak olmayan elemanlari ayni sette birlestirir
+    -> unCommonSet = set(list1) & set(list2)----------> ortak olan elemanlari ayni sette birlestirir
+    -> | ---------------------------------------------> Birleşim (union)
+    -> & ---------------------------------------------> Kesişim (intersection) {1,2} & {2,3} --> {2}
+    -> - ---------------------------------------------> Fark (difference) {1,2} & {2,3} --> {1}
+    -> ^ ---------------------------------------------> Simetrik fark (symmetric diff) {1,2} & {2,3} --> {1,3}
 
 
 
