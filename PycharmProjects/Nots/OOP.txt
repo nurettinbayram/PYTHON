@@ -1,0 +1,7 @@
+    -> Abstraction(Soyutlama) abc(Abstract Base Class)--> Genellikle içinde tanımlı ama tamamlanmamış (abstract) metotlar olur.
+    -> Interface (pythonda dogrudan yoktur)-------------> Tüm metotları sadece tanımlar, gövdesi yoktur.
+    -> Polymorphism (Çok biçimlilik) -------------------> Aynı isimdeki metodların farklı sınıflarda farklı davranması.
+    -> Inheritance (Kalıtım) ---------------------------> Bir sınıfın başka bir sınıftan özellik alması.
+    -> Encapsulation (Kapsülleme / Gizleme) ------------> Veriyi gizleme ve sadece kontrollü erişim sağlama.
+    -> Constructor (__init__) --------------------------> Nesne oluşturulurken otomatik çalışan yapıcı metod.
+

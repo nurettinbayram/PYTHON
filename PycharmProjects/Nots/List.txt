@@ -1,0 +1,100 @@
+    -----------------------------------> [LIST] <-------------------------------
+    -> nums = list1 + list -----------------> iki liste birbirine eklenebilir
+    -> nums = [list1, list] ----------------> iki liste birbirine Alt Listeler olarak eklenebilir
+    -> result = "Audi" in cars -------------> Audi cars listesinin bir elemani mi? true false
+    -> result = cars[0:3] ------------------> 0 dan 3 u index'e kadar olan elemanlari getir 3 dahil degil.
+    -> result = cars[:3] -------------------> 0 dan 3 u index'e kadar olan elemanlari getir 3 dahil degil.
+    -> result = cars[-2:] ------------------> -2 den sona kadar elemanlari al
+    -> cars[-2:] = ['Toyota', 'Honda'] -----> -2 den sona kadar toyota ve honda ile degistir
+    -> result = cars + ['Audi', 'Nissan'] --> cars listesi uzerine audi ve nissan eklenmis olur
+    -> del cars[-1] ------------------------> cars listesi son elemani silinir
+    -> result = cars[::-1] -----------------> cars listesi tersten yaz
+
+    -----------------------------------> [LIST METHODS] <-------------------------------
+    -> numbers = [1,10,5,16,4,9,10]
+    -> letters = ["a","g","s","b","y","a","s"]
+
+    -> min(numbers) ------------------------> Minimum elelemani bulur || 1
+    -> max(numbers) ------------------------> Maxsimum elelemani bulur || 16
+    -> max(letters) ------------------------> Max yada Min harfi de bulur || y (alfabetik)
+    -> min(letters) ------------------------> Max yada Min harfi de bulur || a (alfabetik)
+    -> numbers[3:6] ------------------------> 3 indexten 6(haric) indexe kadar olanlari getir || [16,4,9]
+    -> numbers[:3] -------------------------> bastan basla 3 indexe kadar alir || [1,10,5]
+    -> numbers[4:] -------------------------> 4 indexten basla sona alir || [4,9,10]
+    -> numbers.append(49)-------------------> dizinin sonuna 49 ekler
+    -> numbers.insert(3,78)-----------------> dizinin 3. indexten once konumuna 78 i keler
+    -> numbers.pop() -----------------------> dizinin son elenani silini
+    -> numbers.pop(0) ----------------------> dizinin ilk elenani silini
+    -> numbers.remove(10) ------------------> dizideki  10 elenani siler
+    -> numbers.sort() ----------------------> orijinal diziyi siralar
+    -> num = sorted(numbers) ---------------> orijinal degismeden olusan yeni diziyi siralar
+    -> numbers.reverse() -------------------> orijinal diziyi ters siralar
+    -> num =list(reversed(numbers)) --------> orijinal diziyi degistirmeden yeni diziye tersten siralar # ama bu metoda dikkat edilmesi gerekir ki bir iterator dondurur sonradan listeye cevirmemiz gerekiyor.
+    -> letters.sort() ----------------------> dizinin alfabetik olarak siralar
+    -> letters.count("a") ------------------> dizide kac adet 'a' var
+    -> numbers.count(10) -------------------> dizide kac adet 10 var
+    -> numbers.clear() ---------------------> dizinin tum elemanlari silinir
+    -> 10 in numbers -----------------------> 10 dizide var mi?
+    -> numbers.index(5) --------------------> 5 numarasinin dizideki indexini verir.
+    -> for i, item in enumerate(nums): -----> burada listeyi index value seklinde ele alir yani entry.
+
+
+    -----------------------------------> (TUPLE) <-------------------------------
+    *** Listelerle tamamen ayni sadece basta tanimlanmis olan elemanlari sonradan degistiremezsin tup[0] = "ali" bunu kabul etmez
+    *** sadece index ve count metodlari bulundurur.
+    *** iki tuple listesi arti(+) oparatoru ile toplanabilir
+    *** basta tanimlanan tuple sonradan yeni bir tuple icine aktarilanilir bastaki silinir.
+    *** index erisimi []
+
+
+    -----------------------------------> {DICTIONARY} <-------------------------------
+    *** 'key' : "value"
+    *** key erisimi []
+
+    -----------------------------------> {DICTIONARY METHODS} <-----------------------
+    -> d = {"name" : "Ali", "age" : 25}
+    -> d.keys() ---------------------------> tum keyleri dizi seklinde getirir || ['name', 'age']
+    -> d.values() -------------------------> tum valueleri dizi seklinde getirir|| ['Ali', 25]
+    -> d.item() ---------------------------> tum anahtar deger verilerini doner  || [('name', 'Ali'), ('age', 25)]
+    -> d.get("Ali", "Yok")--************---> Ali anahtarina bakar eger yoksa Yok degeri doner d[index] seklindede cagrilabilir ama olmadigi zaman hata verir get ile bu exceptionin onune gecilir.
+    -> d.update({"city":"Sirnak"})---------> city keysi yoksa ekler varsada degerini gunceller {} var iki nokta kullanilmis
+    -> d.setdefault('country','kurdistan')-> belirtilen anahtar varsa doner yoksa ekleyip doner {} yok virgul kullanilmis
+    -> d.pop("age")------------------------> belirtilen anahtari siler ve silinen degeri doner
+    -> d.popitem() ------------------------> son eklenen ogeyi siler ve doner
+    -> d.clear ----------------------------> tum sozlugu siler
+
+
+
+    -----------------------------------> {SET} <-----------------------
+    *** index ile ulasim mumkun degil
+    *** dongu ile ulasabiliriz
+    *** her elemandan bir adet bulunur ayni elemani iki kere ekleyemezsin
+    *** siralamayi tutmuyor rastgele bir siralamaya sahip
+    *** s = set()
+
+
+    -> fruits.add("cherry") --------------------------> eleman eklenir
+    -> fruits.update(['mango', 'grape'])--------------> dizi seklinde eleman eklenir
+    -> fruits.remove("mango") ------------------------> mangoyu setten siler
+    -> fruits.discard("grape") -----------------------> grapei setten siler
+    -> fruits.pop() ----------------------------------> herhangi bir eleman silinir
+    -> fruits.clear() --------------------------------> tum elemanlari siler
+    -> s = set(myList) -------------------------------> bir listeyi set'e cevirme
+    -> unCommonSet = set(list1) ^ set(list2)----------> ortak olmayan elemanlari ayni sette birlestirir
+    -> unCommonSet = set(list1) & set(list2)----------> ortak olan elemanlari ayni sette birlestirir
+    -> | ---------------------------------------------> Birleşim (union)
+    -> & ---------------------------------------------> Kesişim (intersection) {1,2} & {2,3} --> {2}
+    -> - ---------------------------------------------> Fark (difference) {1,2} & {2,3} --> {1}
+    -> ^ ---------------------------------------------> Simetrik fark (symmetric diff) {1,2} & {2,3} --> {1,3}
+
+
+
+
+
+
+
+
+
+
+
+

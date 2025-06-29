@@ -1,0 +1,3 @@
+liste elemanlari
+satir satir
+eklenebilir

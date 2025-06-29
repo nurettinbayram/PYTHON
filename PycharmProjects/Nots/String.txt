@@ -1,0 +1,49 @@
+    -------------------------------------STRING-------------------------------------
+    -> name = "nurettin"
+    -> lastname = "bayram"
+    -> age = 29
+    -> info = "my name is " + name + " " + lastname + " and i am " + str(age) + "years old."
+               ->Arti oparatoru ile birlestirmede sayisal ifadeleri str ile tur degisimini yaptirmamaiz gerekir
+    -> info1 = "my name is {} {}".format(name, lastname) ----------> narsayilan indexler yazilir
+    -> info1 = "my name is {1} {0}".format(name, lastname) --------> once lastname yazilir
+    -> info1 = "my name is {l} {n}".format(n=name, l=lastname) ----> once lastname yazilir
+    -> info1 = "my name is {} {} {}".format(name,lastname, 29)
+                -> age hemen burada eklendi int seklinde eklenebilir
+    -> info1 = "result : {r:10.2}".format(r =2/7)
+                -> 10 bir nceki kelimeden kac kadakter uzaklikta olmasi gerektigidir  .2 ise ondalik kismi kac karakter olmasi gerektigini belirler
+    -> info1 = f"my name is {name} {lastname} {age}" -------> degiskenler oldugu gibi yazilir
+    -> info2 = info1*3  --------------> info1 i 3 kere yan yana yazdirir info2 ye atar
+    -> ## info[4] = "K"
+                -> ## belirtilen indexteki karakteri Stringlerde degistiremetiz bunun yerine replace metodu kullanilabilir
+
+    -> info[3:7] -----------------------------------> 3. indexten 7.indexe kadar al 7 dahil degil.
+    -> info[3:]  -----------------------------------> 3. indexten sonuna kadar al
+    -> info[ :15]  ---------------------------------> bastan tasla 15.index'e elemana kadar al
+    -> info[2:40:3]  -------------------------------> 2. indexten basla 40. indexe kadar git ama 3 er 3 er al
+    -> info[2:40:3]  -------------------------------> 2. indexten basla 40. indexe kadar git ama 3 er 3 er al
+
+    -------------------------------------STRING METHODS--------------------------------
+    -> text = "Hello There. My name is Sadik Turan"
+
+    -> text.upper() ------------------------------> tum karakterleri buyuk yap
+    -> text.lower() ------------------------------> tum karakterleri kucuk yap
+    -> text.title() ------------------------------> her kelimenin ilk harfi buyuk olur
+    -> text.capitalize() -------------------------> cumlenin ilk harfi buyuk harfe cevrilir
+    -> text.strip() ------------------------------> bas ve son kisimdaki bosluklari siler
+    -> text.split() ------------------------------> bosluklardan ayirarak bir dizi dondurur
+    -> text.split(".")----------------------------> noktalardan ayirarak bir dizi dondurur
+    -> " ".join(text) ----------------------------> Burada text ifadesi bir dizi ise birlestirilir araya bosluk eklenir
+    -> "*".join(text) ----------------------------> Burada text ifadesi bir dizi ise birlestirilir araya yildiz eklenir
+    -> text.find("Sadik") ------------------------> Beirtilen string ifadesinde Sadik kelimesinin gectigi il index i dondurur -1 donerse ifade cumlede yok
+    -> text.startwith('H') -----------------------> text ifadesi H ile mi basliyor?
+    -> text.endwith('H') -------------------------> text ifadesi H ile mi bitiyor?
+    -> text.replace('Sadik', 'Nurettin') ---------> Sadik yerine nurettini yazdir
+    -> text.replace(' ', '->') -------------------> boslik karakterleri yerine -> arrow ifadesi eklenir
+    -> text.replace(' ', '->').replace('i','/')---> boslik karakterleri yerine -> arrow i harfi yerine / eklenir
+    -> text.center(100) --------------------------> text ifadesini 100 karakterlik bir icerige atar ve sagdan soldan esit bosluklar birakir.
+    -> text.center(100,'*') ----------------------> text ifadesini 100 karakterlik bir icerige atar ve sagdan soldan yildizlarla doldururr.
+    -> arr = list(text) --------------------------> text cumlesini harf harf yapip bir dizi dondurur
+    -> arr = [i for i in "hello"] ----------------> "hello" cumlesini harf harf yapip bir dizi dondurur
+    -> name_sort = sorted(name)-------------------> name stringini alfabetik siralar
+
+
