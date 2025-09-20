@@ -21,6 +21,7 @@
     -> info[ :15]  ---------------------------------> bastan tasla 15.index'e elemana kadar al
     -> info[2:40:3]  -------------------------------> 2. indexten basla 40. indexe kadar git ama 3 er 3 er al
     -> info[2:40:3]  -------------------------------> 2. indexten basla 40. indexe kadar git ama 3 er 3 er al
+    -> info[::-1] ----------------------------------> sondan baslayip ters sekilde ifadeyi alir
 
     -------------------------------------STRING METHODS--------------------------------
     -> text = "Hello There. My name is Sadik Turan"
